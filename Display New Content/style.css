@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content-btns{
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    background:rgb(212, 212, 212) ;
+
+}
+.tab-btn:hover:not(.active){
+    background:#ebf7ff;
+    color:#49a6e9 ;
+}
+.tab-btn.active{
+    background: white;
+}
+.content{
+    display: none;
+}
+.content.active{
+    display: block;
+}

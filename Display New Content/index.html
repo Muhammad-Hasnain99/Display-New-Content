@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Display Different Content</title>
+</head>
+
+<body class="bg-[#f1f5f8]">
+    <section class="section flex flex-col justify-center items-center">
+        <div class="title text-center space-y-3 mt-12 mb-8 ">
+            <h1 class="text-3xl  text-[rgb(18,42,65)] font-bold">ABOUT</h1>
+            <p class="text-md  font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vitae qui iure
+                a
+                delectus eveniet quod!</p>
+        </div>
+        <article class="about md:flex md:flex-row">
+            <article class="content-img ml-4 mr-4 md:w-[350%]  md:mt-10">
+                <img class="h-[120%] w-[120%] md:h-[100%]  rounded-lg" src="images/hero-bcg.jpeg" alt="">
+            </article>
+            <div class="about-content bg-white rounded-xl mt-10  ml-4 mr-4 pb-8">
+                <article class="content-btns grid grid-cols-3  h-[50px]  text-[1rem]  mb-8 bg-gray-300">
+                    <button class="tab-btn history active transition duration-700 ease-in-out" data-id="history">History</button>
+                    <button class="tab-btn vision transition duration-700 ease-in-out" data-id="vision">Vision</button>
+                    <button class="tab-btn goals  transition duration-700 ease-in-out" data-id="goals">Goals</button>
+                </article>
+                <article class="content-info pl-7 pr-6 pt-4">
+                    <div class="content active" id="history">
+                        <h4 class="text-lg font-semibold text-[rgb(18,42,65)] ">History</h4>
+                        <p class="text-lg font-light mt-3 text-[rgb(18,42,65)]">I'm baby wolf pickled schlitz try-hard normcore marfa man bun
+                            mumblecore vice pop-up XOXO lomo
+                            kombucha
+                            glossier bicycle rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard tilde
+                            try-hard,
+                            woke
+                            fixie banjo man bun. Small batch tumeric mustache tbh wayfarers 8-bit shaman chartreuse
+                            tacos.
+                            Viral
+                            direct trade hoodie ugh chambray, craft beer pork belly flannel tacos single-origin coffee
+                            art
+                            party
+                            migas plaid pop-up.</p>
+                    </div>
+                    <div class="content" id="vision">
+                        <h4 class="text-lg font-semibold text-[rgb(18,42,65)]">Vision</h4>
+                        <p class="text-md font-light mt-3 text-[rgb(18,42,65)]">Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth crucifix offal deep v hella
+                            biodiesel. Church-key listicle polaroid put a bird on it chillwave palo santo enamel pin,
+                            tattooed
+                            meggings franzen la croix cray. Retro yr aesthetic four loko tbh helvetica air plant, neutra
+                            palo
+                            santo tofu mumblecore. Hoodie bushwick pour-over jean shorts chartreuse shabby chic. Roof
+                            party
+                            hammock master cleanse pop-up truffaut, bicycle rights skateboard affogato readymade
+                            sustainable
+                            deep v live-edge schlitz narwhal.</p>
+                    </div>
+                    <div class="content" id="goals">
+                        <h4 class="text-lg font-semibold text-[rgb(18,42,65)]">Goals</h4>
+                        <p  class="text-md font-light mt-3 text-[rgb(18,42,65)]">Chambray authentic truffaut, kickstarter brunch taxidermy vape heirloom four dollar toast
+                            raclette
+                            shoreditch church-key. Poutine etsy tote bag, cred fingerstache leggings cornhole everyday
+                            carry
+                            blog gastropub. Brunch biodiesel sartorial mlkshk swag, mixtape hashtag marfa readymade
+                            direct
+                            trade
+                            man braid cold-pressed roof party. Small batch adaptogen coloring book heirloom. Letterpress
+                            food
+                            truck hammock literally hell of wolf beard adaptogen everyday carry. Dreamcatcher pitchfork
+                            yuccie,
+                            banh mi salvia venmo photo booth quinoa chicharrones.</p>
+                    </div>
+                </article>
+            </div>
+        </article>
+    </section>
+    <script src="server.js"></script>
+</body>
+
+</html>
